@@ -42,7 +42,7 @@ activities = {
         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
     }
 }
-
+ 
 # Validate student is not already signed up
 @app.post("/activities/{activity_name}/signup")
 def signup_for_activity(activity_name: str, email: str):
